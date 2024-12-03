@@ -90,7 +90,8 @@ body {
 }
 
 .home h2,
-.info h2 {
+.info h2,
+.story h2 {
 	color: var(--pink);
 	font-family: 'Sacramento';
 	font-size: 5rem;
@@ -178,6 +179,32 @@ body {
 	font-weight: 300;
 }
 
+.story {
+	padding-top: 10rem;
+	padding-bottom: 8rem;
+}
+
+.story span {
+	text-transform: uppercase;
+	color: #666;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.story p {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.timeline {
+	list-style: none;
+	padding: 1.4rem 0;
+	margin-top: 1rem;
+	position: relative;
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px) {
@@ -215,6 +242,15 @@ body {
 		text-align: center;
 		font-weight: 450;
 		text-transform: uppercase;
+	}
+
+	.sticky-top {
+		overflow: hidden;
+	}
+
+	.timeline li .timeline-image {
+		width: 140px;
+		height: 140px;
 	}
 }
 /* Mobile Phone  */
